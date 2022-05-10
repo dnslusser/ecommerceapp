@@ -8,6 +8,7 @@ See the License for the specific language governing permissions and limitations 
 
 
 /* Amplify Params - DO NOT EDIT
+  AUTH_ECOMMERCEAPP_USERPOOLID
 	ENV
 	REGION
 	STORAGE_PRODUCTTABLE_ARN
@@ -37,7 +38,7 @@ const awsServerlessExpressMiddleware = require('aws-serverless-express/middlewar
       adding the category
    *  This will also be available in the file itself, commented out at the top
    */
-   var userpoolId = process.env.<your_app_id>
+   var userpoolId = process.env.AUTH_ECOMMERCEAPP_USERPOOLID
    
    // DynamoDB configuration
    const region = process.env.REGION
