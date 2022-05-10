@@ -117,6 +117,11 @@ async function getItems(){
   }
 }
 
+app.get('/products/*', function(req, res) {
+  // Add your code here
+  res.json({success: 'get call succeed!', url: req.url});
+});
+
 /****************************
 * Example post method *
 ****************************/
