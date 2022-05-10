@@ -3,7 +3,7 @@
   "paths": {
     "/products": {
       "name": "/products",
-      "lambdaFunction": "ecommercefunction",
+      "lambdaFunction": "ecommercefunction22s",
       "permissions": {
         "setting": "protected",
         "auth": [

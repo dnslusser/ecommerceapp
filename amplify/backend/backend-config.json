@@ -20,6 +20,29 @@
           ]
         }
       ]
+    },
+    "ecommercefunction22s": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "ecommerceapp",
+          "attributes": [
+            "UserPoolId"
+          ]
+        },
+        {
+          "category": "storage",
+          "resourceName": "producttable",
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ]
+        }
+      ]
     }
   },
   "storage": {
@@ -61,7 +84,7 @@
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "ecommercefunction",
+          "resourceName": "ecommercefunction22s",
           "attributes": [
             "Name",
             "Arn"
