@@ -1,6 +1,6 @@
 import { Auth } from 'aws-amplify'
 
-const checkUser = async (updateUser) => {
+export const checkUser = async (updateUser) => {
   const userData = await Auth
     .currentSession()
     .catch(err => console.log('error: ', err));
