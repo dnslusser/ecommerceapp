@@ -13,7 +13,7 @@ import {
 } from '@ant-design/icons';
 
 import { Hub } from 'aws-amplify';
-import checkUser from './checkUser';
+import { checkUser } from './checkUser';
 
 export const Nav = () => {
 
